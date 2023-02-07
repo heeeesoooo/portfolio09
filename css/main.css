@@ -1,0 +1,39 @@
+/*  */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+
+}
+
+#header .gnb_list {
+    display: none;
+}
+
+/* ----------메뉴리스트---------- */
+
+/* ----------사업소개---------- */
+
+#businessArea .content-wrap {
+    display: flex;
+}
+
+#businessArea img {
+    width: 100%;
+}
+
+* {
+    outline: 1px solid tomato;
+}
