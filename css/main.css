@@ -1,10 +1,11 @@
 /*  */
+
 .inner {
     width: 1200px;
     margin: 0 auto;
 }
 
-/* header */
+/* ----------------------------------------header------------------------------------------- */
 #header {
     position: fixed;
     top: 0;
@@ -16,13 +17,131 @@
     justify-content: space-between;
     padding: 0 50px;
 
+    line-height: 100px;
+    text-align: center;
+
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+#header:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#header.on {
+    line-height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+}
+
+#header .logo {
+    display: block;
+    background-image: url(../img/logo-w.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    width: 200px;
+}
+
+#header.on .logo {
+    background-image: url(../img/logo.png);
+}
+
+
+#header .gnb>ul {
+    display: flex;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+#header .gnb>ul>li .menu_wrap {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    line-height: 50px;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: none;
+}
+
+#header .gnb>ul>li:hover .menu_wrap {
+    display: block;
+}
+
+#header .gnb>ul>li .menu_wrap .smenu {
+    display: flex;
+    /* justify-content: center; */
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+#header .gnb>ul>li:nth-child(1) .menu_wrap ul {
+    transform: translate(220px, 0);
+}
+
+#header .gnb>ul>li:nth-child(2) .menu_wrap ul {
+    transform: translate(330px, 0);
+}
+
+#header .gnb>ul>li:nth-child(3) .menu_wrap ul {
+    transform: translate(450px, 0);
+}
+
+#header .gnb>ul>li:nth-child(4) .menu_wrap ul {
+    transform: translate(560px, 0);
+}
+
+#header .gnb>ul>li:nth-child(7) .menu_wrap ul {
+    transform: translate(940px, 0);
+}
+
+#header .gnb>ul>li:nth-child(8) .menu_wrap ul {
+    transform: translate(1060px, 0);
+}
+
+/* ----------메뉴리스트---------- */
+#header .nav-all {
+    font-size: 30px;
 }
 
 #header .gnb_list {
     display: none;
 }
 
-/* ----------메뉴리스트---------- */
+/* ----------------------------------------main------------------------------------------- */
+/* ----------mainslide---------- */
+#mainVisual {
+    position: relative;
+}
+
+.mainSlide img {
+    width: 100%;
+}
+
+.mainSlide .img_name {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mainSlide .textbox {
+    position: absolute;
+}
+
 
 /* ----------사업소개---------- */
 
@@ -34,6 +153,14 @@
     width: 100%;
 }
 
-* {
-    outline: 1px solid tomato;
+
+
+/* ----------footer---------- */
+.footer .inner {
+    display: flex;
 }
+
+
+/* * {
+    outline: 1px solid tomato;
+} */

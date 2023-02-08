@@ -1,3 +1,15 @@
+const HD_WRAP = document.querySelector('#header');
+
+const HD_WRAP_HANDLER = () => {
+    let SCT = window.scrollY;
+    SCT > 0
+        ? HD_WRAP.classList.add('on')
+        : HD_WRAP.classList.remove('on');
+}
+
+window.addEventListener('scroll', HD_WRAP_HANDLER);
+
+
 const MAIN_SLIDE = new Swiper(".mainSlide", {
     slidesPerView: 1,
     spaceBetween: 30,
