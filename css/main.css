@@ -1,4 +1,11 @@
 /*  */
+.sec {
+    padding: 100px 0;
+}
+
+.content {
+    height: 100vh;
+}
 
 .inner {
     width: 1200px;
@@ -122,10 +129,12 @@
 /* ----------mainslide---------- */
 #mainVisual {
     position: relative;
+    color: #fff;
 }
 
 .mainSlide img {
     width: 100%;
+    height: 100vh;
 }
 
 .mainSlide .img_name {
@@ -133,27 +142,345 @@
     top: 200px;
     right: 200px;
 
-    color: #fff;
     font-size: 25px;
     font-weight: 700;
 }
 
 .mainSlide .textbox {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainSlide .textbox span {
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    margin: 0 0 30px 0;
+    text-decoration: underline rgba(255, 255, 255, 0.8);
+    text-underline-offset: 10px;
+}
+
+.mainSlide .textbox h3 {
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.mainSlide .textbox p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.mainSlide .swiper-button-prev,
+.mainSlide .swiper-button-next {
+    color: #fff;
+}
+
+.mainSlide .swiper-pagination-bullet-active {
+    background: #fff;
 }
 
 
+
+.title_wrap {
+    text-align: center;
+    color: #000;
+}
+
+.title_wrap h3 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.tit-eng {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    margin: 0 0 50px 0;
+    text-decoration: underline #000;
+    text-underline-offset: 10px;
+}
+
 /* ----------사업소개---------- */
+#businessArea {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+#businessArea .title_wrap {
+    margin: 0 0 150px 0;
+}
 
 #businessArea .content-wrap {
     display: flex;
+    gap: 30px;
 }
 
 #businessArea img {
     width: 100%;
 }
 
+#businessArea .content-wrap .textbox {
+    padding: 40px 20px;
+    background: #fff;
+}
 
+#businessArea .content-wrap .textbox span {
+    color: #000;
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+#businessArea .content-wrap .textbox p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+
+#businessArea .content-wrap .textbox a {
+    display: block;
+    padding: 15px 20px;
+    background: #242424;
+    color: #fff;
+
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+#businessArea figure {
+    transition: 0.5s;
+}
+
+#businessArea figure:hover {
+    margin-top: -6.5em;
+}
+
+#businessArea figure:hover .textbox {
+    overflow: visible;
+    height: auto;
+}
+
+#businessArea figure:hover .textbox a {
+    display: block;
+    height: auto;
+}
+
+/* ----------사업소개---------- */
+#saleVisual .saleSlide {
+    position: relative;
+}
+
+#saleVisual .swiper-slide {
+    display: flex;
+}
+
+#saleVisual .swiper-slide img {
+    width: 50%;
+}
+
+#saleVisual .sale_text_wrap {
+    flex: 1;
+}
+
+#saleVisual .sale_text_wrap .salestate_ing {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+
+    width: 100px;
+    height: 100px;
+    background: -webkit-gradient(linear, right bottom, left top, from(#f585ff), to(#8af1ff));
+    margin: 0 0 100px 0;
+}
+
+#saleVisual .sale_text_wrap .sale_deco_desc {
+    color: #aaa;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0 0 20px 0;
+}
+
+#saleVisual .sale_text_wrap .sale_tit {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 50px 0;
+}
+
+#saleVisual .sale_text_wrap .sale_tel {
+    color: #999;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 50px 0;
+}
+
+#saleVisual .sale_text_wrap p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#saleVisual .sale_text_wrap>a {
+    position: absolute;
+    bottom: 0;
+
+    padding: 30px 120px;
+    background: #555;
+    color: #fff;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#saleVisual .sale_text_wrap>a>i {
+    margin: 0 10px 0 0;
+}
+
+
+#saleVisual .sale_btn_wrap>div {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    z-index: 999;
+
+    width: 100px;
+    height: 100px;
+    background: #555;
+    color: #fff;
+}
+
+#saleVisual .sale_btn_wrap .swiper-button-prev {
+    margin: 0 0 0 -50px;
+    transform: translate(0, 0);
+}
+
+#saleVisual .sale_btn_wrap .swiper-button-next {
+    margin: 0 0 0 50px;
+    transform: translate(0, 0);
+}
+
+/* ----------회사소식---------- */
+#mainNews {
+    background: #fff url(../img/bgImg_02.jpg) no-repeat 50% 0;
+    background-size: cover;
+}
+
+#mainNews .title_wrap {
+    color: #fff;
+}
+
+#mainNews .tit-eng {
+    text-decoration: underline #fff;
+}
+
+
+#mainNews .news_list {
+    display: flex;
+}
+
+#mainNews .news_list li {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    height: 300px;
+    padding: 40px 20px;
+    transition: 0.5s;
+}
+
+#mainNews .news_sec {
+    margin: 0 0 20px 0;
+}
+
+#mainNews .news_sec .newstitle {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #f0f5f6;
+}
+
+#mainNews .news_sec .newstitle h4 {
+    margin: 0 0 20px 0;
+    color: #999;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    width: 150px;
+    text-decoration: underline #999;
+    text-underline-offset: 10px;
+}
+
+#mainNews .news_sec .newstitle span {
+    color: #242424;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#mainNews .news_sec .newsli:hover {
+    z-index: 2;
+    transform: scale(1.07);
+    box-shadow: 20px 20px 25px rgba(34, 34, 34, 0.35);
+}
+
+#mainNews .news_sec .newsli a {
+    position: relative;
+    height: 100%;
+}
+
+#mainNews .news_sec .news-tit {
+    font-size: 20px;
+    line-height: 30px;
+    color: #242424;
+}
+
+#mainNews .news_sec .newsli .news-date {
+    position: absolute;
+    bottom: 0;
+}
+
+#mainNews .down_sec {
+    display: flex;
+}
+
+#mainNews .down_sec .pr_brochure {
+    flex: 1;
+    height: 100%;
+    background: url(../img/news_01.jpg) no-repeat 50% 40%;
+    background-size: 100%;
+}
+
+#mainNews .down_sec .pr_wellaum {
+    flex: 1;
+    height: 100%;
+    background: url(../img/news_02.jpg) no-repeat 50% 26%;
+    background-size: 100%;
+}
+
+#mainNews .down_sec .pr {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px 40px;
+}
 
 /* ----------footer---------- */
 .footer .inner {
@@ -161,6 +488,6 @@
 }
 
 
-/* * {
+* {
     outline: 1px solid tomato;
-} */
+}
