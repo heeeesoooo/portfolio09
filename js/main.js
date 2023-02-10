@@ -41,13 +41,4 @@ const SALE_SLIDE = new Swiper(".saleSlide", {
     },
 });
 
-const NEWS = new Swiper(".recruit-list", {
-    direction: "vertical",
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-
 
